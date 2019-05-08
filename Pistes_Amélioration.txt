@@ -1,0 +1,12 @@
+08/05/2019
+
+Problèmes :
+1 - Affichage saccadé par moments
+2 - Seulement 20 charactères composant la barre
+3 - Impossible de clear console sur certains IDE
+= Manque d'esthétique
+
+Pistes de solution :
+1 - Affichage de la barre via une interface graphique (Tkinter, PyGame, autres ?)
+2 - Ajout de couleurs
+3 - Un défilement de la barre plus fluide avec un rectangle qui se déplace / s'étire (?)
