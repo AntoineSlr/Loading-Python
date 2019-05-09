@@ -36,6 +36,6 @@ Nouveaux problèmes :
 1 - Pour l'instant le programme n'est pas exécutable
 2 - Le programme utilise des time.sleep(x) ce qui n'est pas représentatif d'un chargement réel
 
-Pistes de solutions :
+Pistes de solution :
 1 - Trouver un moyen de "convertir" le .py en .exe (une fois le programme terminé)
 2 - Appliquer le programme à un projet concret (exemple génération de millions de données nécessitant potentiellement plusieurs minutes)
