@@ -16,7 +16,7 @@ window = pygame.display.set_mode([640, 360])
 # Définition du nom affiché au dessus de la fenêtre
 pygame.display.set_caption('Loading')
 
-# Génération du nombre aléatoire (définissant la vitesse de chargement
+# Génération du nombre aléatoire (définissant la vitesse de chargement)
 ran = random.randint(6, 10) * 10
 
 # Initialisation de la largeur de la future barre de chargement, et du % de chargement
@@ -46,7 +46,7 @@ while True:
             pourc = int(((i + 1) / ran) * 100)
 
             # On note la valeur da la largeur précédente pour pouvoir ajouter une transition entre l'ancienne
-            # Et la nouvelle valeur de rec (de pixel en pixel, au lieu d'ajouter 4 pixels à chaque nouveau %
+            # Et la nouvelle valeur de rec (de pixel en pixel, au lieu d'ajouter 4 pixels à chaque nouveau %)
             oldrec = rec
 
             # La barre fait 400 pixels de large, sa largeur sera donc de 4 pixels / pourcent
@@ -65,7 +65,7 @@ while True:
             while oldrec < rec:
 
                 # La manière dont le % au dessus de la barre sera affiché, on convertit le pourcentage en string
-                # Et on lui ajouter le symbole '%' derrière
+                # Et on lui ajoute le symbole '%' derrière
                 text_display = str(pourc) + '%'
 
                 # Définition de la police et de la taille du texte
@@ -74,7 +74,7 @@ while True:
                 # Définition du contenu et de la couleur du texte
                 text = font.render(text_display, True, white2, dgrey)
 
-                # Définition du rectangle du text, et de la position de son centre
+                # Définition du rectangle du texte, et de la position de son centre
                 textRect = text.get_rect()
                 textRect.center = (320, 150)
 
