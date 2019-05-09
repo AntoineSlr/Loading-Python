@@ -10,3 +10,32 @@ Pistes de solution :
 1 - Affichage de la barre via une interface graphique (Tkinter, PyGame, autres ?)
 2 - Ajout de couleurs
 3 - Un défilement de la barre plus fluide avec un rectangle qui se déplace / s'étire (?)
+
+--------------------------------------------------------------------------------------------------------
+
+09/05/2019
+
+Anciens problèmes :
+1 - Affichage saccadé par moments [FIXED] :  
+2 - Seulement 20 charactères composant la barre [FIXED]
+3 - Impossible de clear console sur certains IDE [FIXED]
+
+Solutions :
+1 - Utilisation de pygame pour une gestion facile des formes et couleurs
+2 - La barre de chargement est un rectangle dont la largeur varie en fonction du chargement
+3 - Les couleurs sont facilement personnalisable
+
+Résultats :
+1 - L'affichage se fait désormais en 60 images / secondes 
+2 - On a désormais 400 pixels composant la barre de chargement, ce qui permet une transition plus fluide
+3 - Plus besoin de clear une console, nous avons la largeur d'un rectangle qui se met à jour
+
+
+
+Nouveaux problèmes :
+1 - Pour l'instant le programme n'est pas exécutable
+2 - Le programme utilise des time.sleep(x) ce qui n'est pas représentatif d'un chargement réel
+
+Pistes de solutions :
+1 - Trouver un moyen de "convertir" le .py en .exe (une fois le programme terminé)
+2 - Appliquer le programme à un projet concret (exemple génération de millions de données nécessitant potentiellement plusieurs minutes)
