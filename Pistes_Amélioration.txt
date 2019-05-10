@@ -39,3 +39,17 @@ Nouveaux problèmes :
 Pistes de solution :
 1 - Trouver un moyen de "convertir" le .py en .exe (une fois le programme terminé)
 2 - Appliquer le programme à un projet concret (exemple génération de millions de données nécessitant potentiellement plusieurs minutes)
+
+--------------------------------------------------------------------------------------------------------
+
+10/05/2019
+
+Anciens problèmes :
+1 - Pour l'instant le programme n'est pas exécutable
+2 - Le programme utilise des time.sleep(x) ce qui n'est pas représentatif d'un chargement réel
+
+Solutions :
+1 - Pas nécessaire d'avoir le programme en exécutable, mais je sais maintenant comment faire
+2 - Le programme est désormais appliqué à un projet réel qui va générer 20 000 mots de passe, soit une minute de génération, ce qui permet de se passer des time.sleep() et d'effectuer le chargement sur une valeur réelle
+
+
