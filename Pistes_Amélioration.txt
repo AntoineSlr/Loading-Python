@@ -52,4 +52,13 @@ Solutions :
 1 - Pas nécessaire d'avoir le programme en exécutable, mais je sais maintenant comment faire
 2 - Le programme est désormais appliqué à un projet réel qui va générer 20 000 mots de passe, soit une minute de génération, ce qui permet de se passer des time.sleep() et d'effectuer le chargement sur une valeur réelle
 
+--------------------------------------------------------------------------------------------------------
+
+21/05/2019
+
+Nouveau problème : 
+1 - Le système de chargement étant directement intégré au programme générant les mots de passe, il ralentit beaucoup les performances du programme. (Sans le système de chargement, il faut quelques minutes pour générer 2 000 000+ mots de passe, avec le chargement il faut une minute pour ne générer que 25 000 mots de passe)
+
+Piste de solution :
+1 - Dissocier le chargement du programme. Par exemple, le programme de génération de mots de passe serait actif, avec ses performances optimales, et l'interface de chargement se contenterait de vérifier x fois par seconde le contenu du fichier dans lequel le premier programme écrit.
 
